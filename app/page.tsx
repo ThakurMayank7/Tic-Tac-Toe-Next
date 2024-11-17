@@ -20,6 +20,7 @@ export default function Home() {
     
     
         <Grid/>
+        <br />
         <Footer/>
     </>
   );
