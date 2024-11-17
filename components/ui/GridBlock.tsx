@@ -18,7 +18,7 @@ function GridBlock({ darkM, gridId, click, text }: GridBlockProps) {
       className={`${
         darkM ? "bg-gray-600" : "bg-teal-300"
       } rounded aspect-square flex items-center justify-center max-h-32 
-        hover:${darkM ? "bg-black" : "bg-teal-700"} text-8xl cursor-pointer`}
+        hover:${darkM ? "bg-gray-900" : "bg-teal-700"} text-8xl cursor-pointer`}
       onClick={func}
     >
       {text}
