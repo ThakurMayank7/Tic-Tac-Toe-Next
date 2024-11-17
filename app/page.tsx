@@ -1,8 +1,8 @@
 'use client';
 
 import Footer from "@/components/Footer";
-import Grid from "@/components/Grid";
 import Header from "@/components/Header";
+import PlayGround from "@/components/PlayGround";
 import { useState } from "react";
 
 
@@ -19,7 +19,7 @@ export default function Home() {
       <Header darkMode={darkMode} changeDark={handleChange}/>
     
     
-        <Grid/>
+        <PlayGround darkM={darkMode}/>
         <br />
         <Footer/>
     </>

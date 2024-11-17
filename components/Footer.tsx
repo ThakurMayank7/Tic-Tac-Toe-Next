@@ -1,6 +1,10 @@
 import React from 'react'
 
-function Footer() {
+type FooterProps = {
+    darkmode: boolean;
+  };
+
+function Footer({darkmode}:FooterProps) {
   return (
     <footer>
         <div className="container mx-auto text-center">
