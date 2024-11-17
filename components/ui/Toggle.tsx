@@ -19,7 +19,7 @@ function Toggle({change,darkMode}:{change:()=>void;darkMode:boolean}) {
     </label>
     <div className="flex justify-center items-center ml-2">
         
-    <p className="text-center font-bold text-lg">{darkMode?"Light Mode":"Dark Mode"}</p>
+    <p className={`text-center font-bold text-lg ${darkMode?"text-white":""}`}>{darkMode?"Light Mode":"Dark Mode"}</p>
     </div>
     </>
   )

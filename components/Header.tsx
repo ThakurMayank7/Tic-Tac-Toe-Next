@@ -12,8 +12,8 @@ type HeaderProps = {
 function Header({darkMode,changeDark}:HeaderProps) {
 
   return (
-    <header className="flex flex-row items-center justify-center mb-4 bg-gray-100 p-4">
-        <h1 className="text-6xl font-bold">Tic Tac Toe</h1>
+    <header className={`flex flex-row items-center justify-center pb-4 ${darkMode?"bg-gray-900":"bg-gray-300"}  p-4`}>
+        <h1 className={`text-6xl font-bold ${darkMode?"text-white":""}`}>Tic Tac Toe</h1>
         <div className="flex ml-10">
 
         <Toggle darkMode={darkMode} change={changeDark}/>   
