@@ -11,11 +11,7 @@ type GridProps = {
 function Grid({darkmode,grid,clickBlock}:GridProps) {
 
     const clickedBlock=(gridId:number)=>{
-        console.log(gridId);    //got the gridBlock that is clicked
-
-        clickBlock(gridId);
-        console.log("only performed once");
-
+        clickBlock(gridId);     
     }
     
   return (
@@ -31,7 +27,6 @@ function Grid({darkmode,grid,clickBlock}:GridProps) {
                 <GridBlock gridId={8} darkM={darkmode} text={grid[7]} click={clickedBlock}/>
                 <GridBlock gridId={9} darkM={darkmode} text={grid[8]} click={clickedBlock}/>
             </div>
-            <span>Status</span>
         </div>
   )
 }
