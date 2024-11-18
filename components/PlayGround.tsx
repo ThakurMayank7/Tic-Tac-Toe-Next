@@ -28,9 +28,6 @@ function PlayGround({ darkM }: PlayGroundProps) {
     "",
     "",
   ]);
-
-  const [clicked, updateClicked] = useState();
-
   const reset = () => {
     setStatus("Begin Playing!");
     setTurn(turn);
@@ -46,7 +43,7 @@ function PlayGround({ darkM }: PlayGroundProps) {
     if (grid[block - 1] == "" && gameState) {
       //perform chance
 
-      let a = grid;
+      const a = grid;
 
       if (turn) {
         a[block - 1] = "X";
